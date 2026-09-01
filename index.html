@@ -1,1198 +1,291 @@
-<!DOCTYPE html><html class="overflow-x-hidden h-full" lang="en"><head>
-      <meta charset="utf-8">
-      <title>CyberSageRish</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Template Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-      <!-- Template CSS Files -->
-      <link rel="stylesheet" href="css/circle.css">
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/component.css">
-      <link rel="stylesheet" href="css/style.css">
-      <!-- CSS Skin File -->
-      <link rel="stylesheet" href="css/yellow.css">
-      
-      <!-- Modernizr JS File -->
-      <script src="js/modernizr.min.js"></script>
-   </head>
-   <body class="home dark font-Poppins text-fs-16 text-white font-medium leading-lh-1.6 relative w-full h-full bg-black overflow-hidden">
-     
-<!-- Header Starts -->
-      <header class="header from-lg:fixed from-lg:right-30 from-lg:bottom-0 from-lg:z-30 from-lg:flex from-lg:items-center from-lg:h-[calc(100vh-200px)] from-lg:top-100 from-lg:opacity-100 from-lg:transition from-lg:duration-300 from-lg:[&amp;.hide-header]:z-0 from-lg:[&amp;.hide-header]:opacity-0" id="navbar-collapse-toggle">
-         <!-- Fixed Desktop Navigation Starts -->
-         <ul id="desktop-nav" class="icon-menu down-lg:hidden from-md:block uppercase">
-            <li class="desktop-nav-element cursor-pointer w-50 h-50 relative flex items-center transition duration-300 my-20 mx-0 rounded-full bg-black-2 active">
-               <i class="fa fa-home absolute left-0 right-0 mx-auto block text-center top-15 pointer-events-none text-fs-19"></i>
-               <div class="group block p-0 w-50 h-50">
-                  <h2 class="absolute text-center -z-10 block h-50 pr-25 pl-30 text-fs-15 right-0 opacity-0 text-white leading-lh-50 font-medium transition-all duration-300 rounded-30 group-hover:opacity-100 group-hover:right-27 group-hover:rounded-tl-30 group-hover:rounded-bl-30 group-hover:rounded-tr-none group-hover:rounded-br-none">Home</h2>
-               </div>
-            </li>
-            <li class="desktop-nav-element cursor-pointer w-50 h-50 relative flex items-center transition duration-300 my-20 mx-0 rounded-full bg-black-2">
-               <i class="fa fa-user absolute left-0 right-0 mx-auto block text-center top-15 pointer-events-none text-fs-19"></i>
-               <div class="group block p-0 w-50 h-50">
-                  <h2 class="absolute text-center -z-10 block h-50 pr-25 pl-30 text-fs-15 right-0 opacity-0 text-white leading-lh-50 font-medium transition-all duration-300 rounded-30 group-hover:opacity-100 group-hover:right-27 group-hover:rounded-tl-30 group-hover:rounded-bl-30 group-hover:rounded-tr-none group-hover:rounded-br-none">About</h2>
-               </div>
-            </li>
-            <li class="desktop-nav-element cursor-pointer w-50 h-50 relative flex items-center transition duration-300 my-20 mx-0 rounded-full bg-black-2">
-               <i class="fa fa-briefcase absolute left-0 right-0 mx-auto block text-center top-15 pointer-events-none text-fs-19"></i>
-               <div class="group block p-0 w-50 h-50">
-                  <h2 class="absolute text-center -z-10 block h-50 pr-25 pl-30 text-fs-15 right-0 opacity-0 text-white leading-lh-50 font-medium transition-all duration-300 rounded-30 group-hover:opacity-100 group-hover:right-27 group-hover:rounded-tl-30 group-hover:rounded-bl-30 group-hover:rounded-tr-none group-hover:rounded-br-none">Portfolio</h2>
-               </div>
-            </li>
-            <li class="desktop-nav-element cursor-pointer w-50 h-50 relative flex items-center transition duration-300 my-20 mx-0 rounded-full bg-black-2">
-               <i class="fa fa-envelope-open absolute left-0 right-0 mx-auto block text-center top-15 pointer-events-none text-fs-19"></i>
-               <div class="group block p-0 w-50 h-50">
-                  <h2 class="absolute text-center -z-10 block h-50 pr-25 pl-30 text-fs-15 right-0 opacity-0 text-white leading-lh-50 font-medium transition-all duration-300 rounded-30 group-hover:opacity-100 group-hover:right-27 group-hover:rounded-tl-30 group-hover:rounded-bl-30 group-hover:rounded-tr-none group-hover:rounded-br-none">Contact</h2>
-               </div>
-            </li>
-            <li class="desktop-nav-element cursor-pointer w-50 h-50 relative flex items-center transition duration-300 my-20 mx-0 rounded-full bg-black-2">
-               <i class="fa fa-comments absolute left-0 right-0 mx-auto block text-center top-15 pointer-events-none text-fs-19"></i>
-               <div class="group block p-0 w-50 h-50">
-                  <h2 class="absolute text-center -z-10 block h-50 pr-25 pl-30 text-fs-15 right-0 opacity-0 text-white leading-lh-50 font-medium transition-all duration-300 rounded-30 group-hover:opacity-100 group-hover:right-27 group-hover:rounded-tl-30 group-hover:rounded-bl-30 group-hover:rounded-tr-none group-hover:rounded-br-none">Blog</h2>
-               </div>
-            </li>
-         </ul>
-         <!-- Fixed Desktop Navigation Ends -->
-         <!-- Mobile Menu Starts -->
-         <nav class="hidden down-md:block relative">
-            <div id="menuToggle" class="fixed top-30 right-30 z-50 select-none pt-19 pl-16 w-54 h-54 rounded-5 bg-black-3 xs:right-15 xs:top-4 xs:pb-13 xs:w-49 xs:h-49">
-               <input id="inputmobile" class="h-54 w-54 absolute top-0 left-0 opacity-0 z-20 cursor-pointer peer" type="checkbox">
-               <span class="flex h-0.5 w-23 mb-5 relative bg-white z-10 rounded-3 origin-0 custom-transition peer-checked:rotate-45 peer-checked:translate-x-1 peer-checked:translate-y-0"></span>
-               <span class="flex h-0.5 w-23 mb-5 relative bg-white z-10 rounded-3 origin-0-100 custom-transition peer-checked:opacity-0 peer-checked:scale-0-2"></span>
-               <span class="flex h-0.5 w-23 mb-5 relative bg-white z-10 rounded-3 origin-0-100 custom-transition peer-checked:-rotate-45 peer-checked:translate-x-2 peer-checked:translate-y-2"></span>
-               <ul class="fixed m-0 left-0 top-0 w-full h-full pt-60 bg-black-3 -translate-x-full ease-menu-mobile duration-500 peer-checked:transform-none [&amp;>li]:cursor-pointer [&amp;>li]:after:absolute [&amp;>li]:after:h-px [&amp;>li]:after:w-[calc(100%-60px)] [&amp;>li]:after:bg-black-4 [&amp;>li]:after:left-30 [&amp;>li:last-child]:after:hidden" id="mobile-nav">
-                  <li class="mobile-nav-element active relative pl-30 home-link">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-home"></i>
-                        <span class="absolute left-50 xs:left-35 font-normal">Home</span>
-                     </div>
-                  </li>
-                  <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-user"></i>
-                        <span class="absolute left-50 xs:left-35 font-normal">About</span>
-                     </div>
-                  </li>
-                  <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-folder-open"></i>
-                        <span class="absolute left-50 xs:left-35 font-normal">Portfolio</span>
-                     </div>
-                  </li>
-                  <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-envelope-open"></i>
-                        <span class="absolute left-50 xs:left-35 font-normal">Contact</span>
-                     </div>
-                  </li>
-                  <li class="mobile-nav-element relative pl-30">
-                     <div class="uppercase delay-2000 no-underline relative text-fs-26 xs:text-fs-18 py-14">
-                        <i class="fa fa-comments"></i>
-                        <span class="absolute left-50 xs:left-35 font-normal">Blog</span>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-         <!-- Mobile Menu Ends -->
-      </header>
-            <!-- Header Ends -->
-            <!-- Main Content Starts -->
-      <div class="w-full h-full pages overflow-hidden">
-<!-- Home Starts -->
-         <div class="page page--current" id="home">
-            <div class="bg-accent fixed w-full h-200prcnt -rotate-15 -top-1/2 -left-83prcnt hidden from-lg:block"></div>
-            <div class="flex items-center h-screen w-full down-lg:mx-auto down-lg:justify-center xs:text-left down-lg:text-center ">
-               <!-- Desktop Image Starts -->
-               <img class="hidden from-lg:block fixed w-1/3 h-[calc(100vh-80px)] left-40 top-40 rounded-30 shadow-1 object-cover" src="images/Portfolio-Pic.png" alt="">
-               <!-- Desktop Image Ends -->
-               <div class="from-lg:ml-100/3 from-lg:w-2/3">
-                  <div class="mx-auto max-w-550 custom-md-1:max-w-450">
-                     <!-- Mobile Image Starts -->
-                     <img src="images/Portfolio-Pic.png" class="hidden down-lg:block xs:!hidden rounded-full w-270 h-270 mx-auto mb-25 border-4 border-solid border-black-3" alt="my picture">
-                     <!-- Mobile Image Ends -->
-<!-- Informations Starts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh Verma | Cybersecurity Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            /* Anti-Copy & Screenshot Deterrent CSS */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            
+            background-color: #030712; /* Deep slate / black */
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .font-mono { font-family: 'Fira Code', monospace; }
+        
+        /* Obfuscate content if printed */
+        @media print { body { display: none !important; } }
+        
+        /* Tech Grid Background */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
+        }
 
-                    <h1 class="text-fs-40 text-accent font-Poppins relative uppercase font-bold leading-lh-32 pl-32 before:absolute before:left-0 before:top-19 before:h-4 before:w-20 before:rounded-10 custom-md-2:text-fs-32 down-xl:before:hidden down-xl:pl-0 custom-md-2:leading-lh-52 down-md:text-fs-40 down-md:leading-lh-28 down-md:mt-29 down-md:mb-13 xs:text-fs-29 xs:leading-lh-29 xs:mt-17" >
-                        Rishabh Verma
-                        <span class="block text-white"><span class="typing"></span></span>
-                    </h1>
-                    
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-                    <h4><script>
-                        var typed = new Typed(".typing", {
-                            strings: ["DLP Analyst", "SOC Analyst", "SIEM Analyst" , "Threat Intelligence", "Brand Protection", "MPLS"],
-                            typeSpeed: 100,
-                            backSpeed: 80,
-                            loop: true
-                        });
-                    </script>
-                    </h4>
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(6, 182, 212, 0.15);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 10px 40px rgba(6, 182, 212, 0.1);
+        }
 
-                     <p class="font-Open-sans mt-15 mb-28 leading-lh-35 down-lg:mt-2.5 down-lg:mb-23 down-lg:text-fs-15 down-lg:leading-lh-30">Hey there, I'm Rishabh Verma, a Cyber Security Consultant at PWC || Ex. Officer in Cyber Security Department at Tata Power Delhi Distribution Ltd. Currently having Experience in Data Leak Prevention, SIEM, SOC and Cyber Threat Intelligence - Brand Protection. Experience in utilizing Cyber Security Tools such as Forcepoint DLP, Microsoft Purview, ArcSight SIEM, Microfocus iNMS, Recorded Future, and other Open Source cyber security and threat intelligence tools. </p>
-                     <div id="link-about" class="button cursor-pointer overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out">
-                        <span class="relative z-20 text-white">more about me</span>
-                        <span class="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-arrow-right bg-accent"></span>
-                     </div>
-<!-- Informations Ends -->
-                  </div>
-               </div>
-            </div>
-         </div>
-<!-- Home Ends -->
-<!-- About Starts -->
-         <div class="page" id="about">
-            <div class="w-full">
-<!-- Section Title Starts -->
-               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
-                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
-                     About <span class="text-accent">Me</span>
-                  </h2>
-                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">CV</span>
-               </div>
-<!-- Section Title Ends -->
-               <div class="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
-                  <div class="flex flex-row down-lg:flex-col">
-                    <!-- Personal Informations Starts -->
-                     <div class="xl:basis-1/2 lg:basis-5/12 down-lg:basis-full">
-                        <h3 class="uppercase text-fs-26 xs:text-fs-21 pb-22 text-white font-semibold">
-                           Personal Information
-                        </h3>
-                        <img class="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto" src="images/Portfolio-Pic.png" alt="">
-                        <div class="flex justify-between xs:justify-start font-Open-sans capitalize">
-                           <div class="basis-1/2 [&amp;>div]:pb-20 [&amp;>div:last-child]:pb-0 text-fs-15 xs:text-fs-14">
-                              <div>
-                                 <span class="opacity-80">
-                                 first name :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 Rishabh
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="opacity-80">
-                                 last name :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 Verma
-                                 </span>
-                              </div>
-                              
-                              <div>
-                                 <span class="opacity-80">
-                                 Nationality :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 INDIAN
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="opacity-80">
-                                 Interests :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 Cyber Security, Data Leak Prevention (DLP), Cyber Threat Intelligence - Brand Protection, SIEM, SOC, MPLS 
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="basis-1/2 [&amp;>div]:pb-20 [&amp;>div:last-child]:pb-0 text-fs-15 xs:text-fs-14">
-                              <div>
-                                 <span class="opacity-80">
-                                 address :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 Delhi
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="opacity-80">
-                                 Phone :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 +91-7217625282
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="opacity-80">
-                                 E-mail :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 CyberSageRish@gmail.com
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="opacity-80">
-                                 LinkedIn :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                    CyberSageRish <href https://www.linkedin.com/in/cybersagerish/>
-                                 </span>
-                              </div>
-                              <div>
-                                 <span class="opacity-80">
-                                 Langages :
-                                 </span>
-                                 <span class="xs:block custom-md-2:block font-semibold">
-                                 Hindi, English
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-<!-- Personal Informations Ends -->
-<!-- Facts Starts -->
-                     <div class="xl:basis-1/2 lg:basis-7/12 down-lg:basis-full down-lg:mt-50">
-                        <div class="flex down-lg:-mx-15 flex-wrap">
-                           <div class="w-1/2 px-15">
-                              <div class="pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-black-3 rounded-5 mb-30 xs:mb-25">
-                                 <h3 class="relative inline-block font-bold text-fs-50 xs:text-fs-40 text-accent leading-lh-1.2 after:content-['+'] after:absolute after:-right-24 after:text-fs-33 after:font-light after:top-2">
-                                    6
-                                 </h3>
-                                 <p class="relative xs:text-fs-14 uppercase pl-45 xs:pl-0 xs:before:hidden font-Open-sans font-medium before:absolute before:left-0 before:top-13 before:w-30 before:h-1 before:bg-black-5">
-                                    years of <span class="block">Experience</span>
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="w-1/2 px-15">
-                              <div class="pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-black-3 rounded-5 mb-30 xs:mb-25">
-                                 <h3 class="relative inline-block font-bold text-fs-50 xs:text-fs-40 text-accent leading-lh-1.2 after:content-['+'] after:absolute after:-right-24 after:text-fs-33 after:font-light after:top-2">
-                                    10
-                                 </h3>
-                                 <p class="relative xs:text-fs-14 uppercase pl-45 xs:pl-0 xs:before:hidden font-Open-sans font-medium before:absolute before:left-0 before:top-13 before:w-30 before:h-1 before:bg-black-5">
-                                    completed <span class="block">projects</span>
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="w-1/2 px-15">
-                              <div class="pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-black-3 rounded-5">
-                                 <h3 class="relative inline-block font-bold text-fs-50 xs:text-fs-40 text-accent leading-lh-1.2 after:content-['+'] after:absolute after:-right-24 after:text-fs-33 after:font-light after:top-2">
-                                    10
-                                 </h3>
-                                 <p class="relative xs:text-fs-14 uppercase pl-45 xs:pl-0 xs:before:hidden font-Open-sans font-medium before:absolute before:left-0 before:top-13 before:w-30 before:h-1 before:bg-black-5">
-                                    Security<span class="block">Tools</span>
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="w-1/2 px-15">
-                              <div class="pt-20 xs:pt-15 pr-30 xs:pr-20 pb-25 xs:pb-20 pl-40 xs:pl-25 border border-black-3 rounded-5">
-                                 <h3 class="relative inline-block font-bold text-fs-50 xs:text-fs-40 text-accent leading-lh-1.2 after:content-['+'] after:absolute after:-right-24 after:text-fs-33 after:font-light after:top-2">
-                                    4
-                                 </h3>
-                                 <p class="relative xs:text-fs-14 uppercase pl-45 xs:pl-0 xs:before:hidden font-Open-sans font-medium before:absolute before:left-0 before:top-13 before:w-30 before:h-1 before:bg-black-5">
-                                    Published <span class="block">Research</span>
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-<!-- Facts Ends -->
-                  </div>
-                  <hr class="border-t border-solid border-t-black-3 mx-auto max-w-40prcent mt-70 mb-55">
-                  <h3 class="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
-                     My Skills
-                  </h3>
-<!-- Skills Starts -->
-                  <div class="flex w-full flex-wrap">
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p65 float-none mx-auto bg-black-3">
-                           <span>65%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">Data Leak Prevention</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p75 float-none mx-auto bg-black-3">
-                           <span>75%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">Brand Protection</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p65 float-none mx-auto bg-black-3">
-                           <span>65%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">SIEM</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p68 float-none mx-auto bg-black-3">
-                           <span>68%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">SOC</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p50 float-none mx-auto bg-black-3">
-                           <span>50%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">MPLS</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p50 float-none mx-auto bg-black-3">
-                           <span>50%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">OSINT Tools</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p65 float-none mx-auto bg-black-3">
-                           <span>65%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">Maltego & Spiderfoot</h6>
-                     </div>
-                     <div class="w-1/4 mb-48 down-sm:w-1/2 xs:mb-16">
-                        <div class="c100 p65 float-none mx-auto bg-black-3">
-                           <span>65%</span>
-                           <div class="slice">
-                              <div class="bar"></div>
-                              <div class="fill"></div>
-                           </div>
-                        </div>
-                        <h6 class="uppercase font-Open-sans text-center mt-24 xs:mt-8">Recorded Future</h6>
-                     </div>
-                  </div>
-<!-- Skills Ends -->
-                  
-                     
-                     
-            <hr class="border-t border-solid border-t-black-3 mx-auto max-w-40prcent mt-35 mb-55">
-                  <h3 class="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
-                     Experience &amp; Education
-                  </h3>
-<!-- Resume Starts -->
-                  <div class="flex down-sm:flex-col from-sm:mb-40">
-                    <!-- Experience Starts -->
-                     <div class="w-1/2 down-sm:w-full">
-                        <ul>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-briefcase"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              Associate
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 Price Waterhouse Coopers
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                    October 2021 - Till Now
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 <b>Completed 2 Pojects - </b>
-                                    <br> #1 : SOC Use Case Auditing and Finetuning
-                                    <br>      Role - Auditing the SOC and SIEM use cases and based on the findings finetuning them to reduce the count of false positives and finetune the usecases.
-                                    <br>#2 : Cyber Threat Intelligence - Brand Protection
-                                    <br>      Role - Handling Identification, Linked Analysis and Takedowns of Brand Infringing entities present over the web and Dark web for 20+ Clients. 
-                                 <b><br>Active Projects - </b>
-                                 <br>#1 : Data Leakage Prevention 
-                                          <br>Role - Analysis and Reporting of the Data storage and transfer channels for potential Data Leakage incidents using DLP tools such as FOrcepoint DLP and Microsoft Purview. Additionally Finetuning and configuring DLP policies based on the business requirement.
-                              </p>
-                           </li>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-briefcase"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              #
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 #
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                  #
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 Not Achieved Yet-
-                              </p>
-                           </li>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-briefcase"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              #
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 #
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                    #
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 Not Achieved Yet-
-                              </p>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- Experience Ends -->
-                     <!-- Education Starts -->
-                     <div class="w-1/2 down-sm:w-full">
-                        <ul>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-graduation-cap"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              2023 - Present
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 Engineering Diploma
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                    Pusa Institute of Technology
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 I am pursuing a diploma in Electronics and Communication 
-                              </p>
-                           </li>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-graduation-cap"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              2022
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 schooling
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                    Kendriya Vidyalaya, Sector 8
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 I completed half of my 11th grade in the Science stream 
-                              </p>
-                           </li>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-graduation-cap"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              2011 - 2021
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 schooling
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                    Kendriya Vidyalaya, Sector 22
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 I completed my studies from grades 1 to 10
-                              </p>
-                           </li>
-                           <li class="relative pr-20 pl-60 mb-50 after:absolute after:top-0 after:left-20 after:bg-black-4 after:w-1 after:h-full">
-                              <div class="bg-accent w-40 h-40 absolute left-0 leading-lh-40 text-center z-10 rounded-full text-white">
-                                 <i class="fa fa-graduation-cap"></i>
-                              </div>
-                              <span class="text-white text-fs-12 py-1 px-10 inline-block mb-12 rounded-20 font-semibold bg-black-3 opacity-80 font-Open-sans uppercase">
-                              2007 - 2010
-                              </span>
-                              <h5 class="uppercase text-fs-18 mt-7 mb-10">
-                                 Schooling
-                                 <span class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                 Yuva Shakti Modal School, Budhvihar
-                                 </span>
-                              </h5>
-                              <p class="font-Open-sans text-light-grey text-fs-14">
-                                 I completed my studies from grades KG, UKG, & 1
-                              </p>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- Education Ends -->
-                  </div>
-                  <!-- Resume Ends -->
-               </div>
-            </div>
-         </div>
-         <!-- About Ends -->
-         <!-- Portfolio Starts -->
-         <div class="page" id="portfolio">
-            <div class="w-full">
-              <!-- Section Title Starts -->
-               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
-                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
-                     my <span class="text-accent">portfolio</span>
-                  </h2>
-                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">works</span>
-               </div>
-               <!-- Section Title Ends -->
-               <!-- Portfolio Items Starts -->
-               <div class="-mt-15 pb-60 xs:pb-20 portfolio">
-                  <div id="grid-gallery" class="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
-                      <!-- Portfolio Grid Starts -->
-                     <div class="grid-wrap mx-auto mb-25">
-                        <ul class="gridlist">
-                          <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-1.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 text-white">
-                                    AI Project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-2.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    Youtube Video
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-3.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    Local Video project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-4.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    Image Project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-5.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    image project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-6.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    image project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-7.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    image project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-8.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    image project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                           <!-- Portfolio Grid Item Starts -->
-                           <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
-                              <figure class="transition duration-300 rounded-5 relative overflow-hidden">
-                                 <img class="block relative w-full rounded-5 transition duration-300" src="images/project-9.jpg" alt="">
-                                 <div class="absolute w-full h-full flex items-center justify-center bg-accent">
-                                    <span class="uppercase text-fs-18 tex-white">
-                                    image project
-                                    </span>
-                                 </div>
-                              </figure>
-                           </li>
-                           <!-- Portfolio Grid Item Ends -->
-                        </ul>
-                     </div>
-                     <!-- Portfolio Grid Ends -->
-                     <!-- Portfolio Details Starts -->
-                     <div class="slideshow">
-                        <ul>
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">AI Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Self Learning AI</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label"></span>: <span class="font-semibold">Self</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">Python</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="https://www.mediafire.com/file/sy16m6x3hhn88gw/final_4_%2528high_tech%2529/file" target="_blank">Download</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-1.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Youtube Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">App</span>: <span class="font-semibold">Minecraft</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Self</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">C, android</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.envato.com</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Local Video Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Video</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Videohive</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">Adobe After Effects</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.videhive.net</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Image Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Video</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Videohive</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">Adobe Premium</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.videhive.net</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-4.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Image Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Website</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Envato</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">HTML, CSS, Javascript</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.envato.com</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-5.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Image Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Website</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Envato</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">HTML, CSS, Javascript</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.envato.com</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-6.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Image Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Website</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Envato</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">HTML, CSS, Javascript</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.envato.com</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-7.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Image Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Website</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Envato</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">HTML, CSS, Javascript</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.envato.com</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-8.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                           <!-- Portfolio Item Detail Starts -->
-                           <li class="w-660 absolute left-1/2 top-1/2 -mt-280 -ml-330 invisible">
-                              <figure class="w-full h-full bg-black-3 p-30 overflow-auto rounded-10">
-                                 <!-- Project Details Starts -->
-                                 <figcaption class="mb-15">
-                                    <h3 class="uppercase leading-lh-1.2 text-accent pt-10 pb-28 font-bold text-center text-fs-33">Image Project</h3>
-                                    <div class="flex flex-wrap font-Open-sans text-fs-15">
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-file-text-o pr-8"></i><span class="project-label">Project </span>: <span class="font-semibold">Website</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-user-o pr-8"></i><span class="project-label">Client </span>: <span class="font-semibold">Envato</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-code pr-8"></i><span class="project-label">Langages </span>: <span class="font-semibold">HTML, CSS, Javascript</span>
-                                       </div>
-                                       <div class="w-1/2 xs:w-full mb-8">
-                                          <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview </span>: <span class="font-semibold"><a class="underline text-accent" href="#" target="_blank">www.envato.com</a></span>
-                                       </div>
-                                    </div>
-                                 </figcaption>
-                                 <!-- Project Details Ends -->
-                                 <!-- Main Project Content Starts -->
-                                 <img class="block w-full rounded-5" src="images/project-9.jpg" alt="Portolio Image">
-                                 <!-- Main Project Content Ends -->
-                              </figure>
-                           </li>
-                           <!-- Portfolio Item Detail Ends -->
-                        </ul>
-                        <!-- Portfolio Navigation Starts -->
-                        <nav class="down-lg:fixed down-lg:top-0 down-lg:w-full down-lg:h-102 down-lg:bg-black-3 down-lg:z-10 down-lg:border-b down-lg:border-solid down-lg:border-b-black-4 xs:h-62">
-                           <span class="nav-prev fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:left-0 down-lg:left-30 xs:w-20 xs:top-21"><img class="block" src="images/left-arrow.png" alt="previous"></span>
-                           <span class="nav-next fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:right-0 down-lg:right-30 xs:w-20 xs:top-21"><img class="block" src="images/right-arrow.png" alt="next"></span>
-                           <span class="nav-close fixed cursor-pointer from-lg:top-30 down-lg:top-35 from-lg:right-30 down-lg:left-0 down-lg:right-0 down-lg:mx-auto down-lg:block down-lg:w-32 xs:w-20 xs:top-21"><img class="block" src="images/close-button.png" alt="close"> </span>
-                        </nav>
-                        <!-- Portfolio Navigation Ends -->
-                     </div>
-                     <!-- Portfolio Details Ends -->
-                  </div>
-               </div>
-               <!-- Portfolio Items Ends -->
-            </div>
-         </div>
-         <!-- Portfolio Ends -->
-         <!-- Contact Starts -->
-         <div class="page" id="contact">
-            <div class="w-full">
-              <!-- Section Title Starts -->
-               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
-                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
-                     get in <span class="text-accent">touch</span>
-                  </h2>
-                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">contact</span>
-               </div>
-               <!-- Section Title Ends -->
-               <div class="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
-                  <div class="flex down-lg:flex-col">
-                    <!-- Contact Details Starts -->
-                     <div class="w-1/3 down-lg:w-full px-16 xs:px-0">
-                        <h3 class="text-fs-26 xs:text-fs-21 mb-16 font-semibold uppercase">Don't hesitate to reach out !</h3>
-                        <p class="mb-16 font-Open-sans text-fs-15 xs:text-fs-14">
-                           I welcome collaboration on innovative projects, creative endeavors, or any opportunities aligning with your vision. Feel free to connect and share your ideas.
-                        </p>
-                        <div class="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
-                           <i class="fa fa-envelope-open absolute left-0 top-10 text-fs-33 text-accent"></i>
-                           <span class="block opacity-80 uppercase font-normal">
-                           mail me
-                           </span>
-                           Codexkartikey@gmail.com
-                        </div>
-                        <div class="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
-                           <i class="fa fa-phone-square absolute left-0 top-10 text-fs-39 text-accent"></i>
-                           <span class="block opacity-80 uppercase font-normal">
-                           call me
-                           </span>
-                           +91-8920527681
-                        </div>
-                        <ul class="-ml-5 pt-4 mb-48">
-                           <li class="inline-block">
-                              <a href="#" class="social-item inline-block h-40 w-40 leading-lh-42 text-center text-white transition duration-300 text-fs-17 mx-6 bg-black-2 rounded-full">
-                              <i class="fa fa-facebook"></i>
-                              </a>
-                           </li>
-                           <li class="inline-block">
-                              <a href="#" class="social-item inline-block h-40 w-40 leading-lh-42 text-center text-white transition duration-300 text-fs-17 mx-6 bg-black-2 rounded-full">
-                              <i class="fa fa-twitter"></i>
-                              </a>
-                           </li>
-                           <li class="inline-block">
-                              <a href="#" class="social-item inline-block h-40 w-40 leading-lh-42 text-center text-white transition duration-300 text-fs-17 mx-6 bg-black-2 rounded-full">
-                              <i class="fa fa-youtube"></i>
-                              </a>
-                           </li>
-                           <li class="inline-block">
-                              <a href="#" class="social-item inline-block h-40 w-40 leading-lh-42 text-center text-white transition duration-300 text-fs-17 mx-6 bg-black-2 rounded-full">
-                              <i class="fa fa-dribbble"></i>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- Contact Details Ends -->
-                     <!-- Contact Form Starts -->
-                     <div class="w-2/3 down-lg:w-full px-16 down-lg:px-0">
-                        <form id="contactform" class="contactform" action="https://formsubmit.co/codexkartikey@gmail.com" method="POST">
-                           
+        /* Neon Accents */
+        .text-neon {
+            color: #06b6d4;
+            text-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+        }
+        
+        .border-neon {
+            border-color: #06b6d4;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+        }
 
-                           <div class="flex flex-wrap font-normal">
-                              <div class="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
-                                 <input autocomplete="off" class="w-full bg-black-3 text-fs-15 text-white border border-solid border-black py-11 px-26 mb-30 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form" type="text" name="name" placeholder="YOUR NAME">
-                              </div>
-                              <div class="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
-                                 <input autocomplete="off" class="w-full bg-black-3 text-fs-15 text-white border border-solid border-black py-11 px-26 mb-30 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form" type="email" name="email" placeholder="YOUR EMAIL">
-                              </div>
-                              <div class="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
-                                 <input autocomplete="off" class="w-full bg-black-3 text-fs-15 text-white border border-solid border-black py-11 px-26 mb-30 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form" type="text" name="subject" placeholder="YOUR SUBJECT">
-                              </div>
-                              <div class="w-full px-16 xs:px-0">
-                                 <textarea class="bg-black-3 w-full text-white border border-solid border-black h-160 py-12 px-26 overflow-hidden rounded-30 outline-0 transition duration-300 field-form placeholder:text-placeholder" placeholder="YOUR MESSAGE"></textarea>
-                              </div>
-                              <div class="w-full px-16 xs:px-0 mt-30">
-                                 <button type="submit" class="button overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out">
-                                 <span class="relative z-20 text-white">send message</span>
-                                 <span class="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-send bg-accent"></span>
-                                 </button>
-                              </div>
-                              <div class="w-full px-16 xs:px-0">
-                                 <span id="message" class="output_message h-0 text-center leading-lh-46 rounded-30 text-white block [&amp;.success]:h-46 [&amp;.success]:bg-success [&amp;.error]:h-46 [&amp;.error]:bg-error mt-30 mb-60"></span>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                     <!-- Contact Form Ends -->
-                  </div>
-               </div>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #030712; }
+        ::-webkit-scrollbar-thumb { background: #06b6d4; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0891b2; }
+
+        /* Timeline CSS */
+        .timeline-container { position: relative; padding-left: 2rem; margin-top: 1.5rem; }
+        .timeline-line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #06b6d4, rgba(6, 182, 212, 0.1));
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #030712;
+            border: 2px solid #06b6d4;
+            box-shadow: 0 0 10px #06b6d4;
+            margin-top: 6px;
+        }
+        .timeline-item { margin-bottom: 2.5rem; position: relative; }
+        
+        /* Typewriter Animation */
+        .typewriter h1 {
+            overflow: hidden;
+            border-right: .15em solid #06b6d4;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .05em;
+            animation: typing 2.5s steps(30, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #06b6d4; } }
+
+    </style>
+</head>
+<body class="antialiased">
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300" style="background: rgba(3, 7, 18, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(6, 182, 212, 0.1);">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-mono text-xl font-bold text-neon">&lt;Rishabh /&gt;</div>
+            <div class="space-x-6 text-sm font-mono hidden md:block">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">01. About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">02. Experience</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">03. Skills</a>
+                <a href="https://www.linkedin.com/in/cybersagerish/" target="_blank" class="px-4 py-2 rounded border border-cyan-500 text-cyan-400 hover:bg-cyan-900/30 transition-all">Connect</a>
             </div>
-         </div>
-         <!-- Contact Ends -->
-         <!-- Blog Starts -->
-         <div class="page" id="blog">
-            <div class="w-full">
-              <!-- Section Title Starts -->
-               <div class="mx-auto w-full relative py-80 text-center xs:px-25 xs:pt-16 xs:pb-14 xs:bg-black-3 xs:border-b xs:border-black-4 xs:fixed xs:left-0 xs:right-0 xs:top-0 xs:z-20">
-                  <h2 class="text-fs-56 font-black font-Poppins uppercase text-white m-0 xs:text-fs-26 xs:text-left xs:leading-lh-1.2">
-                     my <span class="text-accent">blog</span>
-                  </h2>
-                  <span class="text-fs-110 absolute left-0 right-0 top-1/2 tracking-10 leading-lh-0.7 font-extrabold text-muted -translate-y-1/2 uppercase xs:hidden">posts</span>
-               </div>
-               <!-- Section Title Ends -->
-               <div class="xl:max-w-1140 lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
-                 <!-- Blog Posts Starts -->
-                  <div class="flex flex-wrap down-sm:flex-col">
-                    <!-- Blog Post Starts -->
-                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
-                        <div class="h-full bg-black-3 rounded-5">
-                           <div class="rounded-t-5 cursor-pointer post-thumb">
-                              <a href="blog-post-dark.html" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
-                              <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="images/blog-post-1.jpg" alt="">
-                              </a>
-                           </div>
-                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
-                              <a href="blog-post-dark.html" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
-                              How to Own Your Audience by Creating an Email List
-                              </a> 
-                              <p class="mt-15 mb-5 font-Open-sans">
-                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Blog Post Ends -->
-                     <!-- Blog Post Starts -->
-                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
-                        <div class="h-full bg-black-3 rounded-5">
-                           <div class="rounded-t-5 cursor-pointer post-thumb">
-                              <a href="blog-post-dark.html" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
-                              <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="images/blog-post-2.jpg" alt="">
-                              </a>
-                           </div>
-                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
-                              <a href="blog-post-dark.html" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
-                              Top 10 Toolkits for Deep Learning in 2020
-                              </a> 
-                              <p class="mt-15 mb-5 font-Open-sans">
-                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Blog Post Ends -->
-                     <!-- Blog Post Starts -->
-                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
-                        <div class="h-full bg-black-3 rounded-5">
-                           <div class="rounded-t-5 cursor-pointer post-thumb">
-                              <a href="blog-post-dark.html" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
-                              <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="images/blog-post-3.jpg" alt="">
-                              </a>
-                           </div>
-                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
-                              <a href="blog-post-dark.html" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
-                              Everything You Need to Know About Web Accessibility
-                              </a> 
-                              <p class="mt-15 mb-5 font-Open-sans">
-                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Blog Post Ends -->
-                     <!-- Blog Post Starts -->
-                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
-                        <div class="h-full bg-black-3 rounded-5">
-                           <div class="rounded-t-5 cursor-pointer post-thumb">
-                              <a href="blog-post-dark.html" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
-                              <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="images/blog-post-4.jpg" alt="">
-                              </a>
-                           </div>
-                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
-                              <a href="blog-post-dark.html" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
-                              How to Inject Humor &amp; Comedy Into Your Brand
-                              </a> 
-                              <p class="mt-15 mb-5 font-Open-sans">
-                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Blog Post Ends -->
-                     <!-- Blog Post Starts -->
-                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
-                        <div class="h-full bg-black-3 rounded-5">
-                           <div class="rounded-t-5 cursor-pointer post-thumb">
-                              <a href="blog-post-dark.html" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
-                              <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="images/blog-post-5.jpg" alt="">
-                              </a>
-                           </div>
-                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
-                              <a href="blog-post-dark.html" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
-                              Women in Web Design: How To Achieve Success
-                              </a> 
-                              <p class="mt-15 mb-5 font-Open-sans">
-                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Blog Post Ends -->
-                     <!-- Blog Post Starts -->
-                     <div class="w-1/3 down-xl:w-1/2 down-sm:w-full px-16 xs:px-0 mb-30">
-                        <div class="h-full bg-black-3 rounded-5">
-                           <div class="rounded-t-5 cursor-pointer post-thumb">
-                              <a href="blog-post-dark.html" class="rounded-t-5 relative overflow-hidden block group outline-0 transition-all duration-300">
-                              <img class="rounded-t-5 transition-all duration-300 group-hover:scale-125" src="images/blog-post-6.jpg" alt="">
-                              </a>
-                           </div>
-                           <div class="bg-black-3 pt-20 px-25 pb-25 rounded-b-5">
-                              <a href="blog-post-dark.html" class="leading-lh-26 text-fs-20 font-semibold text-accent-hover transition duration-300">
-                              Evergreen versus topical content: An overview
-                              </a> 
-                              <p class="mt-15 mb-5 font-Open-sans">
-                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
-                              </p>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- Blog Post Ends -->
-                  </div>
-                  <!-- Blog Posts Ends -->
-                  <!-- Blog Pagination Starts -->
-                  <nav class="mt-24">
-                     <ul class="flex justify-center from-sm:mb-100 down-sm:mb-60">
-                        <li>
-                           <a class="w-43 h-43 transition-all duration-300 text-center block leading-lh-45 bg-black-3 bg-accent-hover rounded-full mx-5" href="#">
-                           1
-                           </a>
-                        </li>
-                        <li>
-                           <a class="w-43 h-43 transition-all duration-300 text-center block leading-lh-45 bg-accent bg-accent-hover rounded-full mx-5" href="#">
-                           2
-                           </a>
-                        </li>
-                        <li>
-                           <a class="w-43 h-43 transition-all duration-300 text-center block leading-lh-45 bg-black-3 bg-accent-hover rounded-full mx-5" href="#">
-                           3
-                           </a>
-                        </li>
-                        <li>
-                           <a class="w-43 h-43 transition-all duration-300 text-center block leading-lh-45 bg-black-3 bg-accent-hover rounded-full mx-5" href="#">
-                           4
-                           </a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <!-- Blog Pagination Ends -->
-               </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 pt-32 pb-20">
+        
+        <!-- Hero Section -->
+        <section class="min-h-[70vh] flex flex-col justify-center items-start">
+            <p class="font-mono text-cyan-400 mb-4">Hello, my name is</p>
+            <div class="typewriter inline-block max-w-full">
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-100 mb-2">Rishabh Verma.</h1>
             </div>
-         </div>
-         <!-- Blog Ends -->
-      </div>
-      <!-- Main Content Ends -->
-      <!-- Template JS Files -->
-      <script src="js/jquery-3.7.1.min.js"></script>
-      <script src="js/styleswitcher.js"></script>
-      <script src="js/imagesloaded.pkgd.min.js"></script>
-      <script src="js/masonry.pkgd.min.js"></script>
-      <script src="js/classie.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/cbpGridGallery.js"></script>
-      <script src="js/jquery.hoverdir.js"></script>
-      <script src="js/menu.js"></script>
-      <script src="js/custom.js"></script>
-   
-</body></html>
+            <h2 class="text-4xl md:text-6xl font-bold text-slate-400 mb-6 mt-2">I protect organizations from evolving threats.</h2>
+            <p class="max-w-2xl text-slate-400 text-lg mb-10 leading-relaxed">
+                I am a Cyber Security Lead specializing in Data Loss Prevention (DLP), Threat Intelligence, and Security Operations Center (SOC) optimization. Currently driving enterprise security and proactive asset protection at <span class="text-cyan-400">Dalberg</span>.
+            </p>
+            <div class="flex gap-4">
+                <a href="#experience" class="px-6 py-3 rounded bg-cyan-600/10 border border-cyan-500 text-cyan-400 font-mono hover:bg-cyan-900/40 hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all">
+                    View My Work
+                </a>
+                <a href="mailto:rishabhsedha@gmail.com" class="px-6 py-3 rounded bg-transparent border border-slate-600 text-slate-300 font-mono hover:border-cyan-400 hover:text-cyan-400 transition-all">
+                    <i class="fas fa-envelope mr-2"></i> Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 border-t border-slate-800">
+            <div class="flex items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-100"><span class="text-cyan-400 font-mono text-xl mr-2">01.</span> About Me</h2>
+                <div class="h-px bg-slate-700 flex-grow ml-6"></div>
+            </div>
+            <div class="glass-card p-8 md:p-10">
+                <p class="text-slate-300 text-lg mb-4">
+                    With over 7 years of hands-on experience in cybersecurity, I specialize in Data Security and Threat Intelligence, safeguarding critical assets across multiple sectors. At <span class="text-cyan-400">PwC</span>, I successfully fine-tuned DLP incident detection to reduce false positives by 75% and orchestrated takedowns of malicious domains and social media handles.
+                </p>
+                <p class="text-slate-300 text-lg">
+                    My expertise spans deploying intrusion prevention systems, managing enterprise data visibility using Netskope and Microsoft Purview, and leading cross-functional teams to build resilient, compliance-aligned security programs. I hold an <span class="text-cyan-400">ISO 22301:2019 Lead Implementor</span> certification and a B.Tech in Electronics and Communications Engineering from Delhi Technological University.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 border-t border-slate-800">
+            <div class="flex items-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-100"><span class="text-cyan-400 font-mono text-xl mr-2">02.</span> Professional Experience</h2>
+                <div class="h-px bg-slate-700 flex-grow ml-6"></div>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Dalberg -->
+                <div class="timeline-item glass-card p-6 md:p-8 ml-4">
+                    <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-100">Cyber Security Lead <span class="text-cyan-400">@ Dalberg</span></h3>
+                        <span class="font-mono text-sm text-slate-400 mt-2 md:mt-0">Apr 2025 - Present</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-slate-300 space-y-2 text-sm md:text-base">
+                        <li>Spearheaded implementation and optimization of enterprise DLP and data classification strategies using <span class="text-cyan-400">Netskope and Microsoft Purview</span>.</li>
+                        <li>Developed and enforced DLP and web security policies aligning with regulatory requirements and industry standards.</li>
+                        <li>Published actionable DLP reports, reducing response times, and maintained 100% solution coverage via regular audits.</li>
+                        <li>Collaborated with legal, compliance, and HR teams to drive a culture of security awareness.</li>
+                    </ul>
+                </div>
+
+                <!-- PwC -->
+                <div class="timeline-item glass-card p-6 md:p-8 ml-4">
+                    <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-100">Cybersecurity Consultant <span class="text-cyan-400">@ PwC</span></h3>
+                        <span class="font-mono text-sm text-slate-400 mt-2 md:mt-0">Oct 2021 - Mar 2025</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-slate-300 space-y-2 text-sm md:text-base">
+                        <li>Delivered end-to-end DLP operations using Netskope, Forcepoint, and Purview, achieving a <span class="text-cyan-400">75% reduction in false positives</span>.</li>
+                        <li>Led threat intelligence for 20+ global clients, orchestrating takedowns of 50+ malicious domains and 200+ fraudulent handles using OSINT tools.</li>
+                        <li>Optimized SOC use cases, driving a 20% improvement in detection and response times.</li>
+                        <li>Prevented over 400 IOCs from impacting environments via advanced threat monitoring (Recorded Future, Maltego).</li>
+                    </ul>
+                </div>
+
+                <!-- Tata Power -->
+                <div class="timeline-item glass-card p-6 md:p-8 ml-4">
+                    <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-100">Cybersecurity Officer <span class="text-cyan-400">@ Tata Power-DDL</span></h3>
+                        <span class="font-mono text-sm text-slate-400 mt-2 md:mt-0">Sep 2017 - Oct 2021</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-slate-300 space-y-2 text-sm md:text-base">
+                        <li>Designed and deployed intrusion prevention systems across 70+ substations securing critical OT/IT infrastructure.</li>
+                        <li>Enhanced network management and incident response via Microfocus INMS and <span class="text-cyan-400">ArcSight SIEM</span> integration.</li>
+                        <li>Performed root cause analysis reducing MTTR, and built security dashboards for executive stakeholders.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 border-t border-slate-800">
+            <div class="flex items-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-100"><span class="text-cyan-400 font-mono text-xl mr-2">03.</span> Core Competencies</h2>
+                <div class="h-px bg-slate-700 flex-grow ml-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill Category 1 -->
+                <div class="glass-card p-6 text-center group">
+                    <i class="fas fa-shield-alt text-4xl text-slate-500 group-hover:text-cyan-400 transition-colors mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">Data Security (DLP)</h3>
+                    <p class="text-slate-400 text-sm">Microsoft Purview, Netskope, Forcepoint, Data Classification, Policy Tuning.</p>
+                </div>
+                
+                <!-- Skill Category 2 -->
+                <div class="glass-card p-6 text-center group">
+                    <i class="fas fa-user-secret text-4xl text-slate-500 group-hover:text-cyan-400 transition-colors mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">Threat Intelligence</h3>
+                    <p class="text-slate-400 text-sm">Brand Protection, OSINT, Recorded Future, Maltego, Takedown Orchestration.</p>
+                </div>
+                
+                <!-- Skill Category 3 -->
+                <div class="glass-card p-6 text-center group">
+                    <i class="fas fa-network-wired text-4xl text-slate-500 group-hover:text-cyan-400 transition-colors mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">SOC & Incident Response</h3>
+                    <p class="text-slate-400 text-sm">ArcSight SIEM, XDR, Use Case Optimization, MTTR Reduction, IT/OT Security.</p>
+                </div>
+            </div>
+
+            <!-- Badges -->
+            <div class="mt-10 flex flex-wrap gap-3 justify-center">
+                <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full font-mono text-sm text-cyan-300">ISO 22301:2019 LI</span>
+                <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full font-mono text-sm text-cyan-300">ISMS</span>
+                <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full font-mono text-sm text-cyan-300">BCM</span>
+                <span class="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full font-mono text-sm text-cyan-300">Java (Coding Ninjas)</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-sm font-mono text-slate-500">
+        <p>Built securely. Designed for resilience.</p>
+        <p class="mt-2">&copy; 2026 Rishabh Verma. All rights reserved.</p>
+    </footer>
+
+    <!-- Anti-Copy Scripts -->
+    <script>
+        // Disable Right Click
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        
+        // Disable Keyboard Shortcuts (Ctrl+C, Ctrl+U, Ctrl+S, F12)
+        document.addEventListener('keydown', e => {
+            if (
+                (e.ctrlKey || e.metaKey) && 
+                ['c', 'u', 's', 'p', 'a'].includes(e.key.toLowerCase()) || 
+                e.key === 'F12'
+            ) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Prevent Dragging Text/Images
+        document.addEventListener('dragstart', e => e.preventDefault());
+    </script>
+</body>
+</html>
